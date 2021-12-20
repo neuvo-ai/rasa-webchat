@@ -72,7 +72,7 @@ class Buttons extends PureComponent {
               }
               return (
                 // eslint-disable-next-line jsx-a11y/no-static-element-interactions
-                <div
+                <button
                   key={index}
                   className={'rw-reply'}
                   onClick={(e) => { e.stopPropagation(); this.handleClick(reply); }}
@@ -80,7 +80,7 @@ class Buttons extends PureComponent {
                   onMouseUp={e => e.stopPropagation()}
                 >
                   {reply.get('title')}
-                </div>
+                </button>
               );
             })}
           </div>

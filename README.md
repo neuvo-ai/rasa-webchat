@@ -20,11 +20,6 @@
 <div align="center">
 <img align="center" src="./rasa_webchat.gif" alt="demonstration">
 </div>
-<br />
-
-### ⚠️ Version 1.0.1 of the rasa webchat is made to work with version 2.3.x and 2.4.x of rasa. Use 1.0.0 for other rasa versions.
-
-<br />
 
 ## Features
 - Text Messages
@@ -54,8 +49,7 @@ In your `<body/>`:
   let e = document.createElement("script"),
     t = document.head || document.getElementsByTagName("head")[0];
   (e.src =
-    "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
-    // Replace 1.x.x with the version that you want
+    "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
     (e.async = !0),
     (e.onload = () => {
       window.WebChat.default(
